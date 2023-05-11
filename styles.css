@@ -4,6 +4,14 @@
     --oscuro: rgb(32, 32, 32);
 }
 
+.title{
+    margin-bottom: 28px;
+}
+
+.b-theme{
+ cursor: pointer;   
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -78,6 +86,7 @@ ul {
 
 .noticias {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     gap: 2rem;
     background-color: rgb(238, 238, 238);
@@ -122,7 +131,47 @@ footer {
 .dark footer {
     background-color: black;
 }
+
 .dark .noticias article {
     background-color: black;
     color: white;
+}
+
+
+
+@media (max-width: 605px) {
+    .noticias {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ul-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;  
+        width: 130px;
+    }
+
+    .nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 30px;
+    }
+
+    .info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 30px; 
+        text-align: center;
+    }
+
 }

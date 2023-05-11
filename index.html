@@ -9,23 +9,25 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 
-<body>
+<body id="body">
 
     <header>
-        <h1>Frontend News</h1>
-        <nav>
-            <ul>
-                <li>Deportes</li>
-                <li>Económicas</li>
-                <li>Políticas</li>
-            </ul>
-        </nav>
-        <div class="tema">
-            <button>Cambiar tema</button>
-        </div>
-        <div class="info">
-            <p class="clima">🌤 24.3° Capital Federal</p>
-            <p class="dolar">💸 Dólar hoy: $151,50/$159,50</p>
+        <div class="header">
+            <h1 class="title">Frontend News</h1>
+            <nav class="nav">
+                <ul class="ul-header">
+                    <li>Deportes</li>
+                    <li>Económicas</li>
+                    <li>Políticas</li>
+                </ul>
+            </nav>
+            <div class="tema">
+                <button class="b-theme" onclick="elegirTema()">Cambiar tema</button>
+            </div>
+            <div class="info">
+                <p class="clima">🌤 24.3° Capital Federal</p>
+                <p class="dolar">💸 Dólar hoy: $151,50/$159,50</p>
+            </div>
         </div>
     </header>
 
